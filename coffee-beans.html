@@ -6,27 +6,51 @@
     <meta name="description" content="Our Coffee - Premium coffee beans and blends">
     <title>Our Coffee - Boss Coffee NYC</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>BOSS</h1>
+        <div class="header-container">
+            <div class="logo">
+                <h1>BOSS</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">The Boss Way</a></li>
+                    <li><a href="coffee-beans.html" class="active">Our Coffee</a></li>
+                    <li><a href="specials.html">Limited Editions</a></li>
+                    <li><a href="contact.html">Find Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">The Boss Way</a></li>
-                <li><a href="coffee-beans.html" class="active">Our Coffee</a></li>
-                <li><a href="specials.html">Limited Editions</a></li>
-                <li><a href="contact.html">Find Us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section>
             <h2>Our Coffee</h2>
-            <p>Content placeholder for Our Coffee page</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/c0a062?text=Coffee+1" alt="Premium Blend">
+                    <h3>Premium Blend</h3>
+                    <p>Content placeholder for coffee product description</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/c0a062?text=Coffee+2" alt="Dark Roast">
+                    <h3>Dark Roast</h3>
+                    <p>Content placeholder for coffee product description</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/c0a062?text=Coffee+3" alt="Light Roast">
+                    <h3>Light Roast</h3>
+                    <p>Content placeholder for coffee product description</p>
+                </div>
+            </div>
         </section>
     </main>
 

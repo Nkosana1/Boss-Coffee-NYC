@@ -6,27 +6,52 @@
     <meta name="description" content="The Boss Way - Our story and philosophy">
     <title>The Boss Way - Boss Coffee NYC</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>BOSS</h1>
+        <div class="header-container">
+            <div class="logo">
+                <h1>BOSS</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">The Boss Way</a></li>
+                    <li><a href="coffee-beans.html">Our Coffee</a></li>
+                    <li><a href="specials.html">Limited Editions</a></li>
+                    <li><a href="contact.html">Find Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">The Boss Way</a></li>
-                <li><a href="coffee-beans.html">Our Coffee</a></li>
-                <li><a href="specials.html">Limited Editions</a></li>
-                <li><a href="contact.html">Find Us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section>
             <h2>The Boss Way</h2>
-            <p>Content placeholder for The Boss Way page</p>
+            <div class="staggered-layout">
+                <div class="staggered-item">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/c0a062?text=Our+Story" alt="Boss Coffee Story">
+                </div>
+                <div class="staggered-item content">
+                    <h3>Our Philosophy</h3>
+                    <p>Content placeholder for The Boss Way page - Philosophy section</p>
+                </div>
+            </div>
+            <div class="staggered-layout reverse">
+                <div class="staggered-item">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/c0a062?text=Our+Mission" alt="Boss Coffee Mission">
+                </div>
+                <div class="staggered-item content">
+                    <h3>Our Mission</h3>
+                    <p>Content placeholder for The Boss Way page - Mission section</p>
+                </div>
+            </div>
         </section>
     </main>
 
