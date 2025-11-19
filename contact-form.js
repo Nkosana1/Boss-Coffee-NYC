@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Hide previous messages
             formMessage.className = 'form-message';
-            formMessage.style.display = 'none';
             
             try {
                 // Send to backend API
@@ -41,8 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (response.ok && data.success) {
                     // Success message
                     formMessage.textContent = data.message;
-                    formMessage.className = 'form-message success';
-                    formMessage.style.display = 'block';
+                    formMessage.className = 'form-message form-message--success';
                     
                     // Reset form
                     contactForm.reset();
@@ -52,14 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     // Error message
                     formMessage.textContent = data.message || 'An error occurred. Please try again.';
-                    formMessage.className = 'form-message error';
-                    formMessage.style.display = 'block';
+                    formMessage.className = 'form-message form-message--error';
                 }
             } catch (error) {
                 console.error('Form submission error:', error);
                 formMessage.textContent = 'Unable to connect to server. Please check your connection and try again.';
-                formMessage.className = 'form-message error';
-                formMessage.style.display = 'block';
+                formMessage.className = 'form-message form-message--error';
             } finally {
                 // Re-enable submit button
                 submitButton.disabled = false;

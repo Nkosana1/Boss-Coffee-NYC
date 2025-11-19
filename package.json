@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "minify-css": "echo 'CSS minification: Use a tool like cssnano or clean-css-cli. Install with: npm install -g clean-css-cli && cleancss -o styles.min.css styles.css'"
   },
   "keywords": [
     "express",
