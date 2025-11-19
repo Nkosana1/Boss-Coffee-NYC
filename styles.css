@@ -479,6 +479,116 @@ footer {
     width: 100%;
 }
 
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--bg-light);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-on-light);
+    font-family: 'Montserrat', 'Oswald', 'Futura', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.required {
+    color: var(--secondary-gold);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--primary-black);
+    background-color: var(--bg-light);
+    color: var(--text-on-light);
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-gold);
+    box-shadow: 0 0 0 3px rgba(192, 160, 98, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--primary-black);
+    color: var(--text-on-dark);
+    border: 2px solid var(--primary-black);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-gold);
+    color: var(--primary-black);
+    border-color: var(--secondary-gold);
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.95rem;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background-color: rgba(192, 160, 98, 0.1);
+    color: var(--secondary-gold);
+    border: 1px solid var(--secondary-gold);
+}
+
+.form-message.error {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+}
+
+/* Contact Form Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
 .social-icons {
     display: flex;
     gap: 1rem;
